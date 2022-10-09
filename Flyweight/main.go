@@ -103,6 +103,14 @@ func NewUser2(fullName string) *User2 {
 	return result
 }
 
+func (u *User2) FullName() string {
+	var parts []string
+	for _, i := range u.names {
+		parts = append(parts, allNames[i])
+	}
+	return strings.Join(parts, " ")
+}
+
 func main() {
 	ft := NewFormattedText("This is a brave new world")
 	ft.Capitalize(10, 15)
