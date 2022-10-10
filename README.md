@@ -1,1 +1,1 @@
-# golang-design-patterns
+### My code along repo for the Udemy course "Discover the modern implementation of design patterns in Go"
